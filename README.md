@@ -50,3 +50,10 @@ Client SOAP Java
 Pour créer un client Java : wsimport -keep http://localhost:9090/BanqueWS?wsdl
 Exemple de code client :
 
+
+
+
+<img width="1280" alt="s1" src="https://github.com/user-attachments/assets/1f46ed2e-c530-40a8-803e-ccd2464e3bff" />
+<img width="1279" alt="s2" src="https://github.com/user-attachments/assets/5e745dfc-3aa9-40b4-af2d-1d8259e9b41a" />
+<img width="1280" alt="s3" src="https://github.com/user-attachments/assets/b851e22e-909f-4490-9c24-b8e8a4731db2" />
+<img width="1279" alt="s4" src="https://github.com/user-attachments/assets/f29a0f25-bebf-4226-8b32-c4a5ee1f2ded" />
