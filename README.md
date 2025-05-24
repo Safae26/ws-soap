@@ -70,3 +70,6 @@ Pour créer un client Java : wsimport -keep http://localhost:9090/BanqueWS?wsdl
 Exemple de code client :
 
 
+JaxB (Biding) ou Mapping Object Xml (OXM) est utilisee pour faire la conversion/seriialisation/deserialisation entre code java et xml
+
+poo d'une maniere transparente
