@@ -8,11 +8,12 @@ Un service web SOAP simple pour les opérations bancaires de base, déployé ave
 
 ## 📋 Fonctionnalités
 
+Le service web offre trois opérations principales :
 
 | Opération                | Description                                  | Exemple                          |
 |--------------------------|----------------------------------------------|----------------------------------|
 | `conversionEuroToDH()`   | Conversion euro → dirham marocain            | 100 EUR → 1100 DH               |
-| `getCompte()`            | Récupération des détails d'un compte         | Code: "C100" → Solde: 5400 DH   |
+| `getCompte()`            | Récupération des détails d'un compte         | Code: 1 → Solde: 5400 DH   |
 | `listComptes()`          | Liste de tous les comptes bancaires          | Retourne List<Compte>           |
 
 ## 🛠️ Structure du Projet
@@ -20,6 +21,19 @@ Un service web SOAP simple pour les opérations bancaires de base, déployé ave
 ### Dépendances (pom.xml)
    - Spring Boot Starter
    - JAX-WS RI (Runtime Implementation)
+   ```
+   <dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.xml.ws</groupId>
+        <artifactId>jaxws-ri</artifactId>
+        <version>2.3.3</version>
+    </dependency>
+</dependencies>
+```
 ### Classes Principales
 
 1. **`BanqueService`** - La classe principale du service web
