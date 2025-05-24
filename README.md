@@ -1,8 +1,8 @@
-# <center> Web Service basé sur SOAP pour la Gestion Bancaire </center>
+# Web Service basé sur SOAP pour la Gestion Bancaire
 
-![Java](https://img.shields.io/badge/Java-17-blue)
-![SOAP](https://img.shields.io/badge/Protocol-SOAP-orange)
-![JAX-WS](https://img.shields.io/badge/Framework-JAX--WS-green)
+![Java](https://img.shields.io/badge/Java-17-blue) ![SOAP](https://img.shields.io/badge/Protocol-SOAP-orange) 
+![JAX-WS](https://img.shields.io/badge/Framework-JAX--WS-green) 
+![WSDL](https://img.shields.io/badge/Interface-WSDL-blueviolet)
 
 Un service web SOAP simple pour les opérations bancaires de base, déployé avec JAX-WS.
 
