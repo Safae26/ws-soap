@@ -61,8 +61,10 @@ Requete 2 getCompte (input et output)
 Requete 3
 
 
-# Module Java client-ws dans le projet soap-ws
+# Module Java client-ws dans le projet client-soap-java
 
+On applique les memes dependances de l'application soap-ws a client-soap-java
+On cree un proxy qui est un ensemble de classes permettant a l'app Java de communiquer avec le web service
 Client SOAP Java consommant le Web Service
 Pour créer un client Java : wsimport -keep http://localhost:9090/BanqueWS?wsdl
 Exemple de code client :
