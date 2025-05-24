@@ -72,4 +72,4 @@ Exemple de code client :
 
 JaxB (Biding) ou Mapping Object Xml (OXM) est utilisee pour faire la conversion/seriialisation/deserialisation entre code java et xml
 
-poo d'une maniere transparente
+poo d'une maniere transparente sans sockets et tout grace a wsdl qui genere le proxy STUB, et communique avec le proxy SKELETON, c'est en fait la couche MIDDLEWARES
