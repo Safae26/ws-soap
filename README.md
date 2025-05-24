@@ -68,13 +68,18 @@ Requete 3
 
 # Module Java client-ws dans le projet client-soap-java
 
-On applique les memes dependances de l'application soap-ws a client-soap-java
-On cree un proxy qui est un ensemble de classes permettant a l'app Java de communiquer avec le web service (il faut avoir jax-ws)
-Client SOAP Java consommant le Web Service
-Pour créer un client Java : wsimport -keep http://localhost:9090/BanqueWS?wsdl
-Exemple de code client :
+## Configuration et dépendances
+On applique les mêmes dépendances que l'application `soap-ws` au projet `client-soap-java`.  
+Les principales dépendances incluent :
+- **JAX-WS** (Java API for XML Web Services) pour la communication SOAP
+- Outils de génération de proxy (`wsimport`)
 
+## Génération du proxy client
+Un proxy est un ensemble de classes permettant à l'application Java de communiquer avec le web service.  
 
-JaxB (Biding) ou Mapping Object Xml (OXM) est utilisee pour faire la conversion/seriialisation/deserialisation entre code java et xml
+## Architecture et fonctionnement
+- JAXB (Java Architecture for XML Binding) : Utilisé pour le mapping objet-XML (OXM), permettant la conversion/sérialisation/désérialisation transparente entre Java et XML.
 
-poo d'une maniere transparente sans sockets et tout grace a wsdl qui genere le proxy STUB, et communique avec le proxy SKELETON, c'est en fait la couche MIDDLEWARES
+- Modèle POO simplifié :
+  Le client interagit via un proxy (STUB) généré à partir du WSDL, qui communique avec le proxy côté serveur (SKELETON).
+  Cette couche middleware abstrait les complexités réseau (sockets, protocoles).
