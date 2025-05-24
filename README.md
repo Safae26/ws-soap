@@ -97,10 +97,22 @@ public class ClientBanqueWS {
 ```
 
 ## Schéma de communication
+## Architecture SOAP - Flux de communication
+
 ```mermaid
 flowchart LR
-    A[Client Java] --> B[[STUB]]
-    B --> C[(Middleware SOAP)]
-    C --> D[[SKELETON]]
-    D --> E[Web Service]
+    A[🖥️ Client Java] -.->|1. Appel méthode| B[🔄 STUB\n<small>Proxy client généré</small>]
+    B -->|2. Sérialisation\nJAXB → XML| C[📦 Middleware SOAP\n<small>Encapsulation WS-I</small>]
+    C -->|3. Requête HTTP| D[🏗️ SKELETON\n<small>Démarshalling WS</small>]
+    D -->|4. Exécution| E[🌐 Web Service]
+    E -->|5. Réponse| D
+    D -->|6. XML → Objet| C
+    C -->|7. Réponse| B
+    B -->|8. Retour méthode| A
+
+    style A fill:#e1f5fe,stroke:#039be5
+    style B fill:#e8f5e9,stroke:#43a047
+    style C fill:#fff3e0,stroke:#fb8c00
+    style D fill:#f3e5f5,stroke:#8e24aa
+    style E fill:#ffebee,stroke:#e53935
 ```
