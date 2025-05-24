@@ -22,13 +22,13 @@ Le service web offre trois opérations principales :
 ### Classes Principales
 
 1. **`BanqueService`** - La classe principale du service web
-<img width="773" alt="service" src="https://github.com/user-attachments/assets/c79dd900-cdec-4dd1-b750-16c9371091e1" />
+<img width="773" alt="BANQUE" src="https://github.com/user-attachments/assets/87b80443-ee79-40f7-8eef-52d8bcb75d71" />
 
 Le service utilise les annotations standard JAX-WS (@WebService, @WebMethod, @WebParam)
 
 
 2. **`Compte`** - Modèle de données pour un compte bancaire
-<img width="774" alt="compte" src="https://github.com/user-attachments/assets/9b41a0c9-405f-4b8b-89dc-ada6aa2a785c" />
+<img width="773" alt="compte" src="https://github.com/user-attachments/assets/1c1d78b7-fc27-4ef1-b2da-35eb0ad36cf2" />
 
 4. **`ServerJWS`** - Classe de déploiement du service
 <img width="773" alt="jws" src="https://github.com/user-attachments/assets/6386c534-bfc1-4c93-940d-480d870c4d5c" />
