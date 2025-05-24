@@ -57,8 +57,10 @@ Requete 1 ConversionEuroToDirham (input et output)
 <img width="895" alt="request1" src="https://github.com/user-attachments/assets/a90f28eb-c9b1-461c-90e1-578db1bbc582" />
 
 Requete 2 getCompte (input et output)
+<img width="928" alt="code2" src="https://github.com/user-attachments/assets/5693798a-ffb1-4053-beed-fae0fd3b409d" />
 
 Requete 3
+<img width="1280" alt="s3" src="https://github.com/user-attachments/assets/a60481e4-1130-498a-976f-582dca8396c8" />
 
 
 # Module Java client-ws dans le projet client-soap-java
