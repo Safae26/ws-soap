@@ -8,11 +8,12 @@ Un service web SOAP simple pour les opérations bancaires de base, déployé ave
 
 ## 📋 Fonctionnalités
 
-Le service web offre trois opérations principales :
 
-- **Conversion de devises** : Convertir un montant de l'euro au dirham marocain (DH)
-- **Consultation de compte** : Obtenir les détails d'un compte bancaire spécifique
-- **Liste des comptes** : Récupérer une liste de comptes bancaires
+| Opération                | Description                                  | Exemple                          |
+|--------------------------|----------------------------------------------|----------------------------------|
+| `conversionEuroToDH()`   | Conversion euro → dirham marocain            | 100 EUR → 1100 DH               |
+| `getCompte()`            | Récupération des détails d'un compte         | Code: "C100" → Solde: 5400 DH   |
+| `listComptes()`          | Liste de tous les comptes bancaires          | Retourne List<Compte>           |
 
 ## 🛠️ Structure du Projet
 
