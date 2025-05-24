@@ -101,14 +101,14 @@ public class ClientBanqueWS {
 
 ```mermaid
 flowchart LR
-    A[🖥️ Client Java] -.->|1. Appel méthode| B[🔄 STUB\n<small>Proxy client généré</small>]
-    B -->|2. Sérialisation\nJAXB → XML| C[📦 Middleware SOAP\n<small>Encapsulation WS-I</small>]
-    C -->|3. Requête HTTP| D[🏗️ SKELETON\n<small>Démarshalling WS</small>]
-    D -->|4. Exécution| E[🌐 Web Service]
-    E -->|5. Réponse| D
-    D -->|6. XML → Objet| C
-    C -->|7. Réponse| B
-    B -->|8. Retour méthode| A
+    A[🖥️ Client] --> B[[STUB]]
+    B --> C[📦 SOAP]
+    C --> D[[SKELETON]]
+    D --> E[🌐 WS]
+    E --> D
+    D --> C
+    C --> B
+    B --> A
 
     style A fill:#e1f5fe,stroke:#039be5
     style B fill:#e8f5e9,stroke:#43a047
