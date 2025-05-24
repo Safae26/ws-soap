@@ -51,17 +51,16 @@ Avec un navigateur : Consultez le WSDL via l'URL ci-dessus pour analyser la stru
 Avec SoapUI : Créez un nouveau projet SOAP, Importez le WSDL
 Testez les opérations : ConversionEuroToDirham, getCompte, listComptes
 
-Client SOAP Java
-Pour créer un client Java : wsimport -keep http://localhost:9090/BanqueWS?wsdl
-Exemple de code client :
-
-
 <img width="417" alt="image" src="https://github.com/user-attachments/assets/72c53c9a-39ed-425a-b92b-3e121d972373" />
 
 Requete 1 ConversionEuroToDirham (input et output)
 <img width="895" alt="request1" src="https://github.com/user-attachments/assets/a90f28eb-c9b1-461c-90e1-578db1bbc582" />
 
 Requete 2 getCompte (input et output)
-<img width="928" alt="image" src="https://github.com/user-attachments/assets/5ca154f4-9879-41da-85e9-1e455b8accbb" />
 
 Requete 3
+
+
+Client SOAP Java consommant le Web Service
+Pour créer un client Java : wsimport -keep http://localhost:9090/BanqueWS?wsdl
+Exemple de code client :
