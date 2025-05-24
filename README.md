@@ -84,6 +84,8 @@ Un proxy est un ensemble de classes permettant à l'application Java de communiq
   Le client interagit via un proxy (STUB) généré à partir du WSDL, qui communique avec le proxy côté serveur (SKELETON).
   Cette couche middleware abstrait les complexités réseau (sockets, protocoles).
 
+## Exemple de code client
+``` java
 // Exemple basique de consommation du service
 public class ClientBanqueWS {
     public static void main(String[] args) {
@@ -92,6 +94,7 @@ public class ClientBanqueWS {
         System.out.println("100 EUR = " + result + " DH");
     }
 }
+```
 
 ## Schéma de communication
 ```mermaid
