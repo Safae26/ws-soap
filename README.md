@@ -76,7 +76,9 @@ Et après on teste les opérations : ConversionEuroToDirham, getCompte, listComp
 <img width="417" alt="image" src="https://github.com/user-attachments/assets/72c53c9a-39ed-425a-b92b-3e121d972373" />
 
 Structure du projet SoapUI :
+
 <img width="193" alt="structure soap" src="https://github.com/user-attachments/assets/a16053f5-0a55-4288-b355-0ae739983e9c" />
+
 
 Requete 1 ConversionEuroToDirham (input et output)
 <img width="895" alt="request1" src="https://github.com/user-attachments/assets/a90f28eb-c9b1-461c-90e1-578db1bbc582" />
