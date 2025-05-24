@@ -16,6 +16,9 @@ Le service web offre trois opérations principales :
 
 ## 🛠️ Structure du Projet
 
+### Dépendances (pom.xml)
+   - Spring Boot Starter
+   - JAX-WS RI (Runtime Implementation)
 ### Classes Principales
 
 1. **`BanqueService`** - La classe principale du service web
