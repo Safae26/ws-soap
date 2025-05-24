@@ -45,3 +45,8 @@ Le service utilise les annotations standard JAX-WS (@WebService, @WebMethod, @We
 Avec un navigateur : Consultez le WSDL via l'URL ci-dessus pour analyser la structure du service
 Avec SoapUI : Créez un nouveau projet SOAP, Importez le WSDL
 Testez les opérations : ConversionEuroToDirham, getCompte, listComptes
+
+Client SOAP Java
+Pour créer un client Java : wsimport -keep http://localhost:9090/BanqueWS?wsdl
+Exemple de code client :
+
