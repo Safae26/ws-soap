@@ -41,6 +41,13 @@ Le service web offre trois opérations principales :
 
 Le service utilise les annotations standard JAX-WS (@WebService, @WebMethod, @WebParam)
 
+| Annotation    | Rôle                                   | Exemple                                                                 | Impact WSDL                          |
+|---------------|----------------------------------------|-------------------------------------------------------------------------|--------------------------------------|
+| **`@WebService`** | Déclare une classe comme service web SOAP | `@WebService(name="BanqueWS")` | Définit le `<service>` dans le WSDL |
+| **`@WebMethod`**  | Expose une méthode comme opération WS    | `@WebMethod(operationName="convertCurrency")`       | Ajoute une opération dans `<portType>` |
+| **`@WebParam`**   | Personnalise les paramètres              | `@WebParam(name="amount") double montant`         | Définit les `<part>` dans les messages |
+| **`@WebResult`**  | Contrôle le nom de retour                | `@WebResult(name="conversionResult")`                                    | Affecte l'élément de `<output>`      |
+
 
 2. **`Compte`** - Modèle de données pour un compte bancaire
 <img width="773" alt="compte" src="https://github.com/user-attachments/assets/1c1d78b7-fc27-4ef1-b2da-35eb0ad36cf2" />
@@ -53,7 +60,7 @@ Le service utilise les annotations standard JAX-WS (@WebService, @WebMethod, @We
 ## 🚀 Déploiement
 
 - On lancer le serveur
-- Le service est disponible à l'adresse : http://localhost:9090/
+- Le service est disponible à l'adresse : http://localhost:9090/ (ou http://0.0.0.0:9090/)
 - Le WSDL peut être consulté via : http://localhost:9090/BanqueWS?wsdl
 
 <img width="1280" alt="s1" src="https://github.com/user-attachments/assets/1f46ed2e-c530-40a8-803e-ccd2464e3bff" />
@@ -63,8 +70,8 @@ Le service utilise les annotations standard JAX-WS (@WebService, @WebMethod, @We
 
 ### 🔍 Test du Service
 Avec un navigateur : Consultez le WSDL via l'URL ci-dessus pour analyser la structure du service
-Avec SoapUI : Créez un nouveau projet SOAP, Importez le WSDL
-Testez les opérations : ConversionEuroToDirham, getCompte, listComptes
+Avec SoapUI : On crée un nouveau projet SOAP, et on importe le WSDL
+Et après on teste les opérations : ConversionEuroToDirham, getCompte, listComptes
 
 <img width="417" alt="image" src="https://github.com/user-attachments/assets/72c53c9a-39ed-425a-b92b-3e121d972373" />
 
@@ -77,7 +84,7 @@ Requete 1 ConversionEuroToDirham (input et output)
 Requete 2 getCompte (input et output)
 <img width="928" alt="code2" src="https://github.com/user-attachments/assets/5693798a-ffb1-4053-beed-fae0fd3b409d" />
 
-Requete 3
+Requete 3 listComptes
 <img width="1280" alt="s3" src="https://github.com/user-attachments/assets/a60481e4-1130-498a-976f-582dca8396c8" />
 
 
