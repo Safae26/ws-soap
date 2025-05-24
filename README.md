@@ -33,6 +33,8 @@ Le service utilise les annotations standard JAX-WS (@WebService, @WebMethod, @We
 4. **`ServerJWS`** - Classe de déploiement du service
 <img width="773" alt="jws" src="https://github.com/user-attachments/assets/6386c534-bfc1-4c93-940d-480d870c4d5c" />
 
+   - 📊 Schéma XML : Le WSDL généré décrit : La structure des données, les paramètres d'entrée/sortie, les opérations disponibles, et les liaisons SOAP.
+
 ## 🚀 Déploiement
 
 - On lancer le serveur
