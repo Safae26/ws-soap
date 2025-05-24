@@ -6,8 +6,6 @@
 
 Un service web SOAP simple pour les opérations bancaires de base, déployé avec JAX-WS.
 
-# Projet Java 1 : soap-ws
-
 ## 📋 Fonctionnalités
 
 Le service web offre trois opérations principales :
@@ -63,7 +61,7 @@ Requete 2 getCompte (input et output)
 Requete 3
 
 
-# Projet Java 2 : client-ws
+# Module Java client-ws dans le projet soap-ws
 
 Client SOAP Java consommant le Web Service
 Pour créer un client Java : wsimport -keep http://localhost:9090/BanqueWS?wsdl
